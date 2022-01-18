@@ -11,4 +11,5 @@ The user should be able to add medicine to the Pharmacy Cart.
 The user should be able to pay for the medicine selected.
 The user should be able to view the list of orders placed till date.
 Perform ESLint on the project
+
 Use Web pack as Module Bundler.
