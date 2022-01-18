@@ -1,0 +1,22 @@
+.home-page {
+    height: 50%;
+  }
+  
+  .home-page img {
+    width: 100%;
+    padding-bottom: 0.6%;
+  }
+  
+  .title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .home-page {
+      padding: 0%;
+    }
+    .home-page img {
+      padding-bottom: 2%;
+    }
+  }
+ 

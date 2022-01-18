@@ -1,0 +1,114 @@
+.sidedrawer {
+  width: 70%;
+  background: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidedrawer.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.sidedrawer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+.sidedrawer__links > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidedrawer__links > li > a:hover {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.sidedrawer__links > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem;
+  text-decoration: none;
+  color: #171717;
+  font-size: 1.6rem;
+}
+
+.sidedrawer__links > li > a > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 8px;
+}
+
+.sidedrawer__cartbadge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #171717;
+  border-radius: 50%;
+  margin-left: 8px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.sidedrawer__links > li > a:hover .sidedrawer__cartbadge {
+  background-color: #fff;
+  color: #171717;
+}
+
+@media (min-width: 960px) {
+  .sidedrawer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=SideDrawer.css.map */
